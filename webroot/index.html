@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project 2 Web Server</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="panel">
+      <h1>CGI-Support Multi-Threaded Web Server</h1>
+      <p>This page is served as a static file from <code>/webroot/index.html</code>.</p>
+      <div class="actions">
+        <a href="/page1.html">Open Static Page</a>
+        <a href="/missing.html">Test 404</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <form class="panel" method="post" action="/cgi-bin/calculator.py">
+        <h2>Calculator CGI</h2>
+        <label>Number A <input name="a" type="number" step="any" value="7"></label>
+        <label>Number B <input name="b" type="number" step="any" value="6"></label>
+        <label>Operation
+          <select name="op">
+            <option value="sum">Sum</option>
+            <option value="product">Product</option>
+          </select>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+
+      <form class="panel" method="post" action="/cgi-bin/query.py">
+        <h2>Student Query CGI</h2>
+        <label>Student ID <input name="student_id" value="20260001"></label>
+        <button type="submit">Query</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

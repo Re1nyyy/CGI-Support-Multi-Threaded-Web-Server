@@ -1,0 +1,86 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+body {
+  margin: 0;
+}
+
+.shell {
+  width: min(980px, calc(100% - 32px));
+  margin: 40px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #d8dee9;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
+}
+
+h1,
+h2 {
+  margin: 0 0 14px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+label {
+  display: block;
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+input,
+select,
+button,
+a {
+  font: inherit;
+}
+
+input,
+select {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #b9c2d0;
+  border-radius: 6px;
+}
+
+button,
+.actions a {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #14532d;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+code {
+  background: #eef2f7;
+  padding: 2px 5px;
+  border-radius: 4px;
+}

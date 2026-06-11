@@ -1,0 +1,22 @@
+# Build artifacts
+webserver
+webserver.exe
+*.o
+*.obj
+*.exe
+
+# Runtime logs
+webroot/log/*.log
+!webroot/log/.gitkeep
+
+# Local/editor files
+.vscode/
+.idea/
+*.swp
+*.tmp
+Thumbs.db
+Desktop.ini
+
+# Python cache
+__pycache__/
+*.pyc
